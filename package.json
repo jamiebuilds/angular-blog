@@ -1,0 +1,45 @@
+{
+  "private": true,
+  "version": "0.0.0",
+  "name": "angular-blog",
+  "description": "Example Blog Application with Angular",
+  "keywords": [],
+  "homepage": "https://github.com/thejameskyle/angular-blog",
+  "bugs": "https://github.com/thejameskyle/angular-blog/issues",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thejameskyle/angular-blog.git"
+  },
+  "author": {
+    "name": "James Kyle",
+    "url": "https://github.com/thejameskyle"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/thejameskyle/angular-blog/blob/master/LICENSE.md"
+    }
+  ],
+  "main": "",
+  "contributors": [
+    {
+      "name": "James Kyle",
+      "email": "me@thejameskyle.com",
+      "url": "https://github.com/thejameskyle"
+    }
+  ],
+  "scripts": {
+  },
+  "files": [],
+  "bin": {},
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "peerDependencies": {
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1.2.10"
+  }
+}
