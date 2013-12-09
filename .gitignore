@@ -14,3 +14,6 @@ sftp-config*.json
 
 # Node
 npm-debug.log
+
+# Stylus
+public/styles/*.css
