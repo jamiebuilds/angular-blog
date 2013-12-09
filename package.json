@@ -39,7 +39,11 @@
     "mongoose": "~3.8.1",
     "coffee-script": "~1.6.3",
     "stylus": "~0.41.1",
-    "rsvp": "~2.0.4"
+    "rsvp": "~2.0.4",
+    "browserify": "~3.0.0",
+    "browserify-middleware": "~2.0.0",
+    "coffeeify": "~0.5.2",
+    "debowerify": "~0.4.0"
   },
   "devDependencies": {},
   "peerDependencies": {},
