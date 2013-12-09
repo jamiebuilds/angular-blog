@@ -20,5 +20,6 @@
   "main": "",
   "ignore": [],
   "dependencies": {
+    "angular": "~1.2.4"
   }
 }
