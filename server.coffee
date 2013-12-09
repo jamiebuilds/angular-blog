@@ -1,8 +1,9 @@
-express  = require 'express'
-mongoose = require 'mongoose'
-stylus   = require 'stylus'
-config   = require './config'
-router   = require './router'
+express    = require 'express'
+mongoose   = require 'mongoose'
+stylus     = require 'stylus'
+browserify = require 'browserify-middleware'
+config     = require './config'
+router     = require './router'
 
 server = express()
 
@@ -19,6 +20,10 @@ server.configure ->
 
   # Styles
   server.use stylus.middleware src: "#{__dirname}/public"
+
+  # Scripts
+  server.use "/scripts/app.js", browserify './public/scripts/app.coffee',
+    transform: ['coffeeify', 'debowerify']
 
   # Static
   server.use express.static "#{__dirname}/public"
