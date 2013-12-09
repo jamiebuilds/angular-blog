@@ -1,9 +1,6 @@
 postsProvider = require './providers/posts'
 
 module.exports.initialize = (server) ->
-  server.get '/', (req, res) ->
-    res.render 'landing/index.jade', title: 'Home'
-
   server.get '/api/posts', (req, res) ->
     postsProvider.findAll().then (posts) ->
       res.send posts
@@ -33,3 +30,6 @@ module.exports.initialize = (server) ->
       res.send 200
     , (err) ->
       res.send 500
+
+  server.get '/*', (req, res) ->
+    res.render 'index.jade', title: 'Home'
