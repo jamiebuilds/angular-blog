@@ -28,16 +28,16 @@
       "url": "https://github.com/thejameskyle"
     }
   ],
-  "scripts": {
-  },
+  "scripts": {},
   "files": [],
   "bin": {},
   "dependencies": {
+    "express": "~3.4.6",
+    "jade": "~0.35.0",
+    "mongoose": "~3.8.1"
   },
-  "devDependencies": {
-  },
-  "peerDependencies": {
-  },
+  "devDependencies": {},
+  "peerDependencies": {},
   "engines": {
     "node": ">=0.8.0",
     "npm": ">=1.2.10"
