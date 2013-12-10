@@ -20,6 +20,8 @@
   "main": "",
   "ignore": [],
   "dependencies": {
-    "angular": "~1.2.4"
+    "angular": "~1.2.4",
+    "angular-resource": "~1.2.4",
+    "angular-route": "~1.2.4"
   }
 }
