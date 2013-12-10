@@ -1,4 +1,7 @@
-div Title:   {{post.title}}
-div Author:  {{post.author}}
-div Content: {{post.content}}
-div: a(href='/posts/{{post._id}}/edit') Edit Post
+.page-header
+  a.pull-right.btn.btn-default(href='/posts/{{post._id}}/edit') Edit Post
+  h1 {{post.title}}
+
+h5.text-muted By {{post.author}}
+
+div {{post.content}}

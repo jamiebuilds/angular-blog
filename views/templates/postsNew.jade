@@ -1,10 +1,22 @@
-h1 New Post
+.page-header
+  h1 New Post
 
-div: label Title:
-div: input(type='text', ng-model='post.title')
+form.form-horizontal
+  .form-group
+    label.col-sm-3.control-label Title:
+    .col-sm-6
+      input.form-control(type='text', ng-model='post.title')
 
-div: label Author:
-div: input(type='text', ng-model='post.author')
+  .form-group
+    label.col-sm-3.control-label Author:
+    .col-sm-6
+      input.form-control(type='text', ng-model='post.author')
 
-div: label Content:
-div: textarea(ng-model='post.content')
+  .form-group
+    label.col-sm-3.control-label Content:
+    .col-sm-6
+      textarea.form-control(rows='10', ng-model='post.content')
+
+  .form-group
+    .col-sm-offset-3.col-sm-6
+      button.btn.btn-primary(type='submit') Create Post
