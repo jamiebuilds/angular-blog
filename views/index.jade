@@ -1,6 +1,26 @@
 extends ./layout
 
 block content
-  input(ng-model='name', placeholder='Enter your name here')
+  div(ng-view)
 
-  h1 Welcome {{name}}
+  script(type='text/ng-template', id='postsIndex')
+    div: a(href='/posts/new') New Post
+    div(ng-repeat='post in posts')
+      a(href='posts/{{post._id}}') {{post.title}}
+
+  script(type='text/ng-template', id='postsNew')
+    div: input(type='text', ng-model='post.title')
+    div: input(type='text', ng-model='post.author')
+    div: textarea(ng-model='post.content')
+
+  script(type='text/ng-template', id='postsShow')
+    h1
+      | {{post.title}}
+      small {{post.author}}
+    div {{post.content}}
+    div: a(href='/posts/{{post._id}}/edit') Edit Post
+
+  script(type='text/ng-template', id='postsEdit')
+    div: input(type='text', ng-model='post.title')
+    div: input(type='text', ng-model='post.author')
+    div: textarea(ng-model='post.content')
