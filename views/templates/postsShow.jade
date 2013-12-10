@@ -1,5 +1,7 @@
 .page-header
-  a.pull-right.btn.btn-default(href='/posts/{{post._id}}/edit') Edit Post
+  .btn-group.pull-right
+    a.btn.btn-default(href='/posts/{{post._id}}/edit') Edit Post
+    button.btn.btn-default(ng-click='delete()') Delete Post
   h1 {{post.title}}
 
 h5.text-muted By {{post.author}}
