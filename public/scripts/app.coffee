@@ -1,6 +1,9 @@
 require 'angular'
 require 'angular-route'
 require 'angular-resource'
+require 'jquery'
+require '../components/bootstrap-stylus/js/collapse.js'
+require '../components/bootstrap-stylus/js/transition.js'
 
 angular.module 'blog', ['ngRoute', 'ngResource']
 

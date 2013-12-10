@@ -1,7 +1,10 @@
 @import '../components/bootstrap-stylus/stylus/bootstrap'
 
-body
-  margin 20px
+.navbar-nav
+  margin ($navbar-padding-vertical / 2) (-($navbar-padding-horizontal))
+
+  @media $media-min-grid-float-breakpoint
+    margin 0
 
 textarea
   max-width 100%

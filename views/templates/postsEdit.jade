@@ -3,20 +3,20 @@
 
 form.form-horizontal(ng-submit='submit()')
   .form-group
-    label.col-sm-3.control-label Title:
-    .col-sm-6
+    label.col-sm-2.control-label Title:
+    .col-sm-10
       input.form-control(type='text', ng-model='post.title', required)
 
   .form-group
-    label.col-sm-3.control-label Author:
-    .col-sm-6
+    label.col-sm-2.control-label Author:
+    .col-sm-10
       input.form-control(type='text', ng-model='post.author', required)
 
   .form-group
-    label.col-sm-3.control-label Content:
-    .col-sm-6
+    label.col-sm-2.control-label Content:
+    .col-sm-10
       textarea.form-control(rows='10', ng-model='post.content', required)
 
   .form-group
-    .col-sm-offset-3.col-sm-6
+    .col-sm-offset-2.col-sm-10
       button.btn.btn-primary(type='submit') Update Post

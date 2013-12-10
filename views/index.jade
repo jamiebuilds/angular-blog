@@ -1,7 +1,10 @@
 extends ./layout
 
 block content
-  div(ng-view)
+  include partials/header
+
+  .container
+    div(ng-view)
 
   script(type='text/ng-template', id='postsIndex')
     include templates/postsIndex
