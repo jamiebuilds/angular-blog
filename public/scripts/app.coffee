@@ -9,6 +9,8 @@ angular.module 'blog', ['ngRoute', 'ngResource']
 
 require './router.coffee'
 
+require './filters/markdown.coffee'
+
 require './services/posts.coffee'
 
 require './controllers/postsIndex.coffee'
