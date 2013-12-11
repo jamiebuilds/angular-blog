@@ -43,7 +43,10 @@
     "browserify": "latest",
     "browserify-middleware": "latest",
     "coffeeify": "latest",
-    "debowerify": "latest"
+    "debowerify": "latest",
+    "passport": "~0.1.17",
+    "passport-local": "~0.1.6",
+    "bcrypt": "~0.7.7"
   },
   "devDependencies": {},
   "peerDependencies": {},
