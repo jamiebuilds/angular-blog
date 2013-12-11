@@ -11,9 +11,18 @@ require './router.coffee'
 
 require './filters/markdown.coffee'
 
+require './services/auth.coffee'
 require './services/posts.coffee'
+require './services/users.coffee'
 
-require './controllers/postsIndex.coffee'
-require './controllers/postsNew.coffee'
-require './controllers/postsShow.coffee'
-require './controllers/postsEdit.coffee'
+require './controllers/login.coffee'
+require './controllers/logout.coffee'
+
+require './controllers/posts/index.coffee'
+require './controllers/posts/new.coffee'
+require './controllers/posts/show.coffee'
+require './controllers/posts/edit.coffee'
+
+require './controllers/users/show.coffee'
+require './controllers/users/new.coffee'
+require './controllers/users/edit.coffee'

@@ -6,11 +6,23 @@ block content
   .container
     div(ng-view)
 
-  script(type='text/ng-template', id='postsIndex')
-    include templates/postsIndex
-  script(type='text/ng-template', id='postsNew')
-    include templates/postsNew
-  script(type='text/ng-template', id='postsShow')
-    include templates/postsShow
-  script(type='text/ng-template', id='postsEdit')
-    include templates/postsEdit
+  script(type='text/ng-template', id='LoginTmpl')
+    include templates/login
+  script(type='text/ng-template', id='LogoutTmpl')
+    include templates/logout
+
+  script(type='text/ng-template', id='PostsIndexTmpl')
+    include templates/posts/index
+  script(type='text/ng-template', id='PostsNewTmpl')
+    include templates/posts/new
+  script(type='text/ng-template', id='PostsShowTmpl')
+    include templates/posts/show
+  script(type='text/ng-template', id='PostsEditTmpl')
+    include templates/posts/edit
+
+  script(type='text/ng-template', id='UsersNewTmpl')
+    include templates/users/new
+  script(type='text/ng-template', id='UsersShowTmpl')
+    include templates/users/show
+  script(type='text/ng-template', id='UsersEditTmpl')
+    include templates/users/edit

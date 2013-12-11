@@ -1,0 +1,21 @@
+.page-header
+  .btn-group.pull-right
+    a.btn.btn-default(href='/account/edit') Edit Account
+    button.btn.btn-default(ng-click='delete()') Delete Account
+  h1 {{user.first_name}} {{user.last_name}}
+
+div.form-horizontal
+  .form-group
+    label.col-sm-2.control-label First Name:
+    .col-sm-10
+      p.form-control-static {{user.first_name}}
+
+  .form-group
+    label.col-sm-2.control-label Last Name:
+    .col-sm-10
+      p.form-control-static {{user.last_name}}
+
+  .form-group
+    label.col-sm-2.control-label Email
+    .col-sm-10
+      p.form-control-static {{user.email}}

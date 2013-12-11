@@ -4,6 +4,6 @@
     button.btn.btn-default(ng-click='delete()') Delete Post
   h1 {{post.title}}
 
-h5.text-muted By {{post.author}}
+h5.text-muted By {{post._user}}
 
 div(ng-bind-html='post.content | markdown')

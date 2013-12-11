@@ -1,5 +1,6 @@
 express    = require 'express'
 mongoose   = require 'mongoose'
+passport   = require 'passport'
 stylus     = require 'stylus'
 browserify = require 'browserify-middleware'
 config     = require './config'
@@ -13,6 +14,7 @@ server.configure ->
   server.use express.compress()
   server.use express.methodOverride()
   server.use express.bodyParser()
+  server.use express.cookieParser()
 
   # Views
   server.set 'views', "#{__dirname}/views"
@@ -28,6 +30,11 @@ server.configure ->
   # Static
   server.use express.static "#{__dirname}/public"
   server.use express.favicon()
+
+  # Authentication
+  server.use express.session secret: config.server.secret
+  server.use passport.initialize()
+  server.use passport.session()
 
   # Router
   server.use server.router

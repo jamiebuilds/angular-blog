@@ -1,3 +1,3 @@
-angular.module('blog').factory 'Posts', ['$resource', ($resource) ->
+angular.module('blog').factory 'PostsService', ['$resource', ($resource) ->
   return $resource('/api/posts/:id', { id: '@id' }, { })
 ]

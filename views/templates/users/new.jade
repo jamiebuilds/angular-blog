@@ -1,0 +1,27 @@
+.page-header
+  h1 New Account
+
+form.form-horizontal(ng-submit='submit()')
+  .form-group
+    label.col-sm-2.control-label First Name:
+    .col-sm-10
+      input.form-control(type='text', ng-model='user.first_name', required)
+
+  .form-group
+    label.col-sm-2.control-label Last Name:
+    .col-sm-10
+      input.form-control(type='text', ng-model='user.last_name', required)
+
+  .form-group
+    label.col-sm-2.control-label Email:
+    .col-sm-10
+      input.form-control(type='text', ng-model='user.email', required)
+
+  .form-group
+    label.col-sm-2.control-label Password:
+    .col-sm-10
+      input.form-control(type='password', ng-model='user.password', required)
+
+  .form-group
+    .col-sm-offset-2.col-sm-10
+      button.btn.btn-primary(type='submit') Create Account
